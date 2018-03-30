@@ -12,18 +12,38 @@
   background-color: #1a237e;
 }
 
+.search{
+  background-color: white;
+}
+
+button{
+  cursor: pointer;
+}
+
 body, .card, .dropdown-menu {
   background-color: #f9fbe7;
 }
 
-.btn-primary, .dropdown-item.active {
-  background-color: #D64541;
+#garis_pembayaran{
+  margin-bottom: 100px;
 }
+
+#pembayaran{
+  margin-top: 50px;
+}
+
+#detil_pembayaran{
+  margin-top: 50px;
+}
+
+#total{
+  margin-top: -650px;
+  margin-left: 600px;
+  margin-bottom: 450px;
+}
+
 /* Padding below the footer and lighter body text */
 
-body {
-  color: #827717;
-}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -69,6 +89,10 @@ body {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+#row2{
+  margin-top: 50px;
 }
 
 .marketing h2 {
