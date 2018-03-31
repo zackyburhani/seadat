@@ -75,13 +75,34 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel"><div class="icon"><i class="ion ion-cube"></i> Tambah Data Barang</div></h4>
+          <h4 class="modal-title" id="myModalLabel"><div class="icon"><i class="fa fa-archive"></i> Tambah Data Barang</div></h4>
         </div>
         <form method="POST" action="" enctype="multipart/form-data">
           <div class="modal-body">
 
             <div class="form-group"><label>Nama Barang</label>
               <input required class="form-control required text-capitalize" placeholder="Input Nama Barang" data-placement="top" data-trigger="manual" type="text" name="nm_barang">
+            </div>
+
+            <div class="form-group"><label>Size</label>
+              <div class="row">
+                <div class="form-check col-md-1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="s">
+                  <label class="form-check-label" for="inlineCheckbox1">S</label>
+                </div>
+                <div class="form-check col-md-1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="m">
+                  <label class="form-check-label" for="inlineCheckbox2">M</label>
+                </div>
+                <div class="form-check col-md-1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="l">
+                  <label class="form-check-label" for="inlineCheckbox3">L</label>
+                </div>
+                <div class="form-check col-md-1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="xl">
+                  <label class="form-check-label" for="inlineCheckbox3">XL</label>
+                </div>
+              </div>
             </div>
 
             <div class="form-group">
@@ -104,8 +125,8 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Submit</button>
             <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p>
           </div>
         </form>
