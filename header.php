@@ -133,32 +133,59 @@
         <div class="modal-body">
           <form method="POST" action="" enctype="multipart/form-data">
             <div class="modal-body">
-							<center><b><h4>Isi Data Diri Lengkap</h4></b></center>
+							<center><b><h4>Daftar Sebagai</h4></b></center>
 							<hr>
+                <div class="form-group"><label></label>
+                  <a href="daftarCustomer.php" style="color:white" class="btn btn-info btn-block"><i class="fa fa-users"></i> Customer
+                  </a>
+                   <a href="daftarPenjual.php" style="color:white" class="btn btn-success btn-block"><i class="fa fa-user"> </i> Penjual</a>
+                </div>
+							<hr>
+              </div>
+        		</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal SIGN UP CUSTOMER -->
+    <div class="modal fade" id="customer" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="" enctype="multipart/form-data">
+            <div class="modal-body">
+              <center><b><h4>Isi Data Diri Lengkap</h4></b></center>
+              <hr>
               <div class="form-group"><label>Username</label>
                 <input required class="form-control required text-capitalize" placeholder="Input Nama Petani" data-placement="top" data-trigger="manual" type="text" name="username">
               </div>
 
-							<div class="form-group">
+              <div class="form-group">
                 <label>E-mail</label>
                 <input required class="form-control required" placeholder="E-mail" data-placement="top" data-trigger="manual" type="text" name="email"s>
               </div>
 
-							<div class="form-group">
+              <div class="form-group">
                 <label>Password</label>
                 <input required class="form-control required" placeholder="Password" data-placement="top" data-trigger="manual" type="text" name="password">
               </div>
 
-						 	<div class="form-group">
+              <div class="form-group">
                 <label>Konfirmasi Password</label>
                 <input required class="form-control required" placeholder="Konfirmasi Password" data-placement="top" data-trigger="manual" type="text" name="password2">
               </div>
 
-						  <div class="form-group"><label>Nama Lengkap</label>
+              <div class="form-group"><label>Nama Lengkap</label>
                 <input required class="form-control" placeholder="Nama Lengkap" data-placement="top" data-trigger="manual" type="text" name="nm_customer">
               </div>
 
-						  <div class="form-group"><label>Jenis Kelamin</label>
+              <div class="form-group"><label>Jenis Kelamin</label>
                 <select class="form-control" name="jenis_kelamin">
                   <option value="perempuan">Perempuan</option>
                   <option value="lakilaki">Laki-Laki</option>
@@ -169,7 +196,7 @@
                 <textarea class="form-control" name="alamat" required></textarea>
               </div>
 
-		           <div class="form-group">
+               <div class="form-group">
                 <label>Nomor Telepon</label>
                 <input required class="form-control required" placeholder="Nomor Telepon" data-placement="top" data-trigger="manual" type="text" name="no_telp" id="no_telp" maxlength="13">
               </div>
@@ -178,16 +205,89 @@
                   <label>Kode Pos</label>
                   <input required class="form-control required" placeholder="Nomor Telepon" data-placement="top" data-trigger="manual" type="text" name="kodepos">
                 </div>
-								<hr>
+                <hr>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
+                <button type="submit" class="btn btn-info"><i class="fa fa-save" href="index.php"></i> Simpan</button>
               </div>
-							<div class="modal-footer">
-		            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
-		            <button type="submit" class="btn btn-info"><i class="fa fa-save"></i> Simpan</button>
-		          </div>
-        		</div>
-
+            </div>
+            <!-- END MODAL SIGN UP CUSTOMER -->
           </form>
         </div>
       </div>
     </div>
-    <!-- Modal SIGN UP -->
+    <!-- Modal SIGN UP PENJUAL -->
+    <div class="modal fade" id="penjual" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <img class="img-circle" id="img_logo" src="">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="" enctype="multipart/form-data">
+            <div class="modal-body">
+              <center><b><h4>Isi Data Diri Lengkap</h4></b></center>
+              <hr>
+              <div class="form-group"><label>Username</label>
+                <input required class="form-control required text-capitalize" placeholder="Input Nama Petani" data-placement="top" data-trigger="manual" type="text" name="username">
+              </div>
+
+              <div class="form-group">
+                <label>E-mail</label>
+                <input required class="form-control required" placeholder="E-mail" data-placement="top" data-trigger="manual" type="text" name="email"s>
+              </div>
+
+              <div class="form-group">
+                <label>Password</label>
+                <input required class="form-control required" placeholder="Password" data-placement="top" data-trigger="manual" type="text" name="password">
+              </div>
+
+              <div class="form-group">
+                <label>Konfirmasi Password</label>
+                <input required class="form-control required" placeholder="Konfirmasi Password" data-placement="top" data-trigger="manual" type="text" name="password2">
+              </div>
+
+              <div class="form-group"><label>Nama Lengkap</label>
+                <input required class="form-control" placeholder="Nama Lengkap" data-placement="top" data-trigger="manual" type="text" name="nm_customer">
+              </div>
+
+              <div class="form-group"><label>Jenis Kelamin</label>
+                <select class="form-control" name="jenis_kelamin">
+                  <option value="perempuan">Perempuan</option>
+                  <option value="lakilaki">Laki-Laki</option>
+                </select>
+              </div>
+
+              <div class="form-group"><label>Alamat</label>
+                <textarea class="form-control" name="alamat" required></textarea>
+              </div>
+
+               <div class="form-group">
+                <label>Nomor Telepon</label>
+                <input required class="form-control required" placeholder="Nomor Telepon" data-placement="top" data-trigger="manual" type="text" name="no_telp" id="no_telp" maxlength="13">
+              </div>
+
+                <div class="form-group">
+                  <label>Nama Toko</label>
+                  <input required class="form-control required" placeholder="Nama Toko" data-placement="top" data-trigger="manual" type="text" name="namatoko">
+                </div>
+                <hr>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
+                <button type="submit" class="btn btn-info"><i class="fa fa-save"></i> Simpan</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal SIGN UP PENJUAL -->
+  </div>
+</div>
+</body>
+</html>
